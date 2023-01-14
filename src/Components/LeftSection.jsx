@@ -52,7 +52,7 @@ let handleSearch = (e) =>{
       </div>
       {
         search == "" ?
-        data.map((ele, idx) => <div className='chats' key={idx} id={idx} onClick={(e) => set(e.target.id)} title={`Click to Chat with ${ele.name}`} >
+        data.map((ele, idx) => <div className='chats' key={idx} id={idx} onClick={(e) => set(e.target.id)} title={`Click to chat with ${ele.name}`} >
           <img src={"https://www.pngmart.com/files/22/User-Avatar-Profile-PNG-Isolated-Transparent-Picture.png"} id={idx} />
           {ele.name}
           <section className='time' id={idx}>{time()}</section></div>)
