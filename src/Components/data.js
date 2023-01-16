@@ -1,13 +1,13 @@
 let data = [
     {name: "Kartik",
     msg:["hello","hi","bye",'data is stored in local storage'],
-    msg2:["this is an example text"],
+    msg2:[],
     id:0,
     },
     {
         name:"Bhai",
         msg:["example1","exapmple2"],
-        msg2:[],
+        msg2:["Example Sent Message"],
         id:1
     },
     {
@@ -24,7 +24,7 @@ let data = [
     },
     {
         name:"Mohit",
-        msg:["example1","exapmple2"],
+        msg:["example1","example2"],
         msg2:[],
         id:4
     },
