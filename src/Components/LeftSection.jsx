@@ -54,11 +54,11 @@ let handleSearch = (e) =>{
         search == "" ?
         data.map((ele, idx) => <div className='chats' key={idx} id={idx} onClick={(e) => set(e.target.id)} title={`Click to chat with ${ele.name}`} >
           <img src={"https://www.pngmart.com/files/22/User-Avatar-Profile-PNG-Isolated-Transparent-Picture.png"} id={idx} />
-          {ele.name}
+          <div className='nameAndMsg' id={ele.id}><section className='name' id={ele.id}>{ele.name}</section> <p className='small' id={ele.id}>{ ele.msg2.length !== 0 ? ele.msg2[ele.msg2.length-1] : ""}</p></div>
           <section className='time' id={idx}>{time()}</section></div>)
           : data.filter((ele)=>ele.name.toLowerCase().includes(search.toLowerCase())).map((ele, idx) => <div className='chats' key={idx} id={idx} onClick={(e) => set(e.target.id)} title={`Click to Chat with ${ele.name}`} >
           <img src={"https://www.pngmart.com/files/22/User-Avatar-Profile-PNG-Isolated-Transparent-Picture.png"} id={idx} />
-          {ele.name}
+          {ele.name} 
           <section className='time' id={idx}>{time()}</section></div>)
       }
 

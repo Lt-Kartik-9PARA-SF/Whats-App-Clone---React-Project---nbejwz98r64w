@@ -23,12 +23,12 @@
  
 }
 .left-topBar,.right-topBar{
-  height: 4rem;
+  height: 4.5rem;
   background-color: #202d33;
   border: .5px solid black;
 }
-img{
-  max-width: 100% !important;
+.left-topBar img{
+  max-width: 70% !important;
 }
 .left-topBar{
   color: white;
@@ -50,9 +50,9 @@ img{
 }
 .chats{
   max-width: 100%;
-  height: 3.5rem;
+  height: 4rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   color: white;
   font-size: larger;
   font-weight: 700;
@@ -62,6 +62,8 @@ img{
 }
 .chats img{
   margin-right: 3rem;
+  
+  max-width: 100%;
 }
 .chats:hover{
 background-color: #495d66;
@@ -156,4 +158,26 @@ button:hover{
   border: 1px solid black;
   color: white;
   height: 80%;
+}
+.small{
+  
+  background-color: rgba(255, 255, 255, 0);
+  margin-top: 0;
+  color: grey;
+  font-size: small;
+  font-weight: 200;
+  font-family:'Helvetica Neue', sans-serif;
+
+
+}
+.nameAndMsg{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.name{
+  margin-bottom: 0;
+  margin-top: 10px;
 }

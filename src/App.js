@@ -10,9 +10,9 @@ function App() {
 
   const [appData, setAppData] = useState(data);
 
-  useEffect(() => {
-    setAppData(data)
-  }, [appData]);
+  //useEffect(() => {
+  //  setAppData(data)
+  //npm }, [appData]);
 
 
   return (
