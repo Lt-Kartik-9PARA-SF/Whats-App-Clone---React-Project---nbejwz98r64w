@@ -42,6 +42,7 @@ let data = [
         var x = JSON.parse(localStorage.getItem('userData'));
         data  = x;
     }
+    
  }
  local();
 export default data;
